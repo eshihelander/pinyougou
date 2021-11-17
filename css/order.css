@@ -1,0 +1,252 @@
+/* 头部公共样式修改部分 */
+
+.search {
+    left: 770px;
+    width: 424px;
+}
+
+.search input {
+    width: 340px;
+}
+
+
+/* 订单信息模块 */
+
+.order_info_hd h3 {
+    font-size: 16px;
+    font-weight: 400;
+    /* line-height: 35px; */
+}
+
+.order_info_bd {
+    height: 788px;
+    margin-top: 20px;
+    padding: 35px 15px 0;
+    border: 1px solid #ddd;
+}
+
+.recipient {
+    height: 120px;
+    border-bottom: 1px solid #ededed;
+}
+
+.order_info_bd h4 {
+    margin-left: 25px;
+    font-size: 14px;
+    color: #333;
+}
+
+.order_info_bd span {
+    cursor: pointer;
+}
+
+.recipient_info a {
+    color: #1474af;
+}
+
+.recipient p,
+.delivery_time p {
+    height: 30px;
+    line-height: 30px;
+    margin: 15px 0 0 40px;
+}
+
+.recipient p span,
+.delivery_time p span {
+    display: inline-block;
+    padding: 0 35px;
+    margin-right: 10px;
+    border: 2px solid #c81623;
+}
+
+.recipient p:nth-of-type(2) a::after {
+    content: '\e91e';
+    font-family: "icomoon";
+    margin-left: 10px;
+    font-size: 18px;
+    vertical-align: middle;
+}
+
+.address {
+    height: 70px;
+    border-bottom: 1px solid #ededed;
+}
+
+.address p {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.address p span {
+    display: inline-block;
+    padding: 0 35px;
+    margin-right: 10px;
+    border: 2px solid #ededed;
+}
+
+.pay_type {
+    height: 105px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ededed;
+}
+
+.pay_more {
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+.pay_more span {
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ededed;
+}
+
+.pay_more span:nth-child(3) {
+    margin-left: 10px;
+    border: 2px solid #c81623;
+}
+
+.pay_more a {
+    float: left;
+    margin-left: 25px;
+}
+
+.delivery_order {
+    height: 335px;
+    border-bottom: 1px solid #ededed;
+}
+
+.delivery_order h4 {
+    height: 60px;
+    line-height: 60px;
+}
+
+.delivery_time {
+    height: 100px;
+    padding-top: 20px;
+    background-color: #f4f4f4;
+}
+
+.delivery_time h5,
+.cdelivery_type h5 {
+    margin-left: 25px;
+}
+
+.delivery_time p span {
+    background-color: #fff;
+}
+
+.delivery_time p a {
+    margin-right: 20px;
+    color: #1474af;
+}
+
+.cdelivery_type {
+    /* 会有多个订单,不能指定高度 */
+    /* height: 150px; */
+    margin-top: 2px;
+    padding-top: 20px;
+    background-color: #feedef;
+}
+
+.cdelivery_type ul li {
+    float: left;
+    height: 82px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.cdelivery_type ul li:nth-child(1) {
+    margin-left: 40px;
+}
+
+.cdelivery_type ul li:nth-child(2) {
+    width: 500px;
+    margin-left: 100px;
+}
+
+.cdelivery_type ul li:nth-child(2) p {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+.cdelivery_type ul li:nth-child(3) {
+    margin-left: 150px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cdelivery_type ul li:nth-child(4) {
+    margin-left: 70px;
+}
+
+.cdelivery_type ul li:nth-child(5) {
+    margin-left: 87px;
+}
+
+.invoice {
+    padding-top: 15px;
+}
+
+.invoice p {
+    margin-top: 5px;
+    margin-left: 40px;
+}
+
+.invoice h4:nth-child(3) {
+    margin-top: 5px;
+}
+
+.invoice h4:nth-child(3)::after {
+    content: '\e91e';
+    font-family: "icomoon";
+}
+
+.order_info_footer table {
+    float: right;
+    /* height: 95px; */
+    padding: 20px 0;
+}
+
+.order_info_footer td:nth-child(1) {
+    width: 200px;
+    text-align: right;
+}
+
+.order_info_footer td:nth-child(2) {
+    width: 150px;
+    text-align: center;
+}
+
+.order_info_footer .current,
+.total .current {
+    font-weight: 700;
+    font-size: 16px;
+    color: #c81623;
+}
+
+.order_info_footer .total {
+    height: 70px;
+    padding: 15px;
+    text-align: right;
+    background: #f4f4f4;
+}
+
+.order_info_footer button {
+    float: right;
+    width: 142px;
+    height: 45px;
+    margin-top: 20px;
+    margin: 20px 30px 20px 0;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: #df3033;
+}

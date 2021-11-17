@@ -1,0 +1,142 @@
+.fast_buy {
+    position: absolute;
+    top: 40px;
+    left: 185px;
+    width: 71px;
+    height: 32px;
+    text-align: right;
+    border-left: 1px solid #c81523;
+}
+
+.fast_buy img {
+    margin-top: 3px;
+}
+
+.hot_events a {
+    padding: 0 28px;
+    line-height: 47px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.tab_list a {
+    padding: 0 23px;
+    line-height: 47px;
+    font-size: 14px;
+}
+
+.tab_list .current {
+    color: #c81523;
+}
+
+.tab_list a:last-child::after {
+    content: '\e91e';
+    font-family: "icomoon";
+}
+
+
+/* 290 460 */
+
+.phone_list ul {
+    width: 1213px;
+}
+
+.phone_list ul li {
+    position: relative;
+    float: left;
+    width: 290px;
+    height: 460px;
+    margin-top: 25px;
+    margin-right: 13px;
+    border: 1px solid transparent;
+}
+
+.phone_list ul li:hover {
+    border: 1px solid #c81523;
+}
+
+.phone_list ul li>a {
+    display: block;
+    width: 290px;
+    height: 290px;
+    line-height: 290px;
+    text-align: center;
+}
+
+.phone_list ul li img {
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.phone_list ul li h4 {
+    padding: 0 10px 0 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.phone_list ul li p {
+    margin-top: 10px;
+    padding: 0 10px 0 12px;
+    line-height: 20px;
+}
+
+.phone_list ul li p i {
+    font-size: 14px;
+    color: #e60012;
+}
+
+.phone_list ul li p span {
+    font-size: 22px;
+    color: #e60012;
+}
+
+.phone_list ul li p em {
+    text-decoration: line-through;
+}
+
+.sale {
+    position: relative;
+    margin-top: 10px;
+    padding: 0 10px 0 12px;
+    font-size: 14px;
+}
+
+.sale_type {
+    overflow: hidden;
+    position: absolute;
+    top: 5px;
+    left: 75px;
+    width: 132px;
+    height: 12px;
+    border: 1px solid #e12228;
+    border-radius: 5px;
+}
+
+.saled_type {
+    width: 80%;
+    height: 100%;
+    background-color: #ed282e;
+}
+
+.saled i,
+.surplus span {
+    color: #ed282e;
+}
+
+.phone_list ul li button {
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+    width: 290px;
+    height: 50px;
+    /* line-height: 50px;
+    text-align: center; */
+    background-color: #b1191a;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 200px;
+}

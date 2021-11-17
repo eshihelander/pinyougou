@@ -1,0 +1,140 @@
+section {
+    height: 486px;
+    background-color: #7e00ff;
+}
+
+.phone_day {
+    margin: 35px 0 0 70px;
+}
+
+.login {
+    display: flex;
+    width: 380px;
+    height: 362px;
+    margin-top: 60px;
+    padding: 0 39px 0 37px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login_type {
+    display: flex;
+    width: 303px;
+    height: 30px;
+    margin: 20px 0;
+    line-height: 30px;
+    color: #ededed;
+    font-size: 20px;
+}
+
+.login_type a {
+    flex: 1;
+    text-align: center;
+    font-size: 18px;
+}
+
+.login_safe {
+    width: 303px;
+    height: 26px;
+    border: 1px solid #f5eecf;
+    background-color: #fffdee;
+}
+
+.login_safe p {
+    font-size: 12px;
+    color: #666;
+    text-indent: 10px;
+    line-height: 26px;
+}
+
+.input_user,
+.input_password {
+    position: relative;
+}
+
+.input_user input,
+.input_password input {
+    width: 303px;
+    height: 36px;
+    /* outline: 1px solid #3aa2e4; */
+    border: 1px solid #b2b2b2;
+    margin: 10px 0 17px 0;
+    text-indent: 47px;
+    outline-color: #3aa2e4;
+}
+
+.input_user input::placeholder,
+.input_password input::placeholder {
+    font-size: 14px;
+    color: #b2b2b2;
+}
+
+.input_user::before,
+.input_password::before {
+    position: absolute;
+    top: 11px;
+    left: 1px;
+    content: '';
+    width: 37px;
+    height: 34px;
+    background: url(../img/user.png) no-repeat;
+}
+
+.input_password::before {
+    background: url(../img/lock.png) no-repeat;
+}
+
+.login_forget {
+    display: flex;
+    width: 303px;
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.login_forget span {
+    color: #b2b2b2;
+}
+
+.login_forget a {
+    font-weight: 700;
+}
+
+.login_forget input[type=checkbox] {
+    vertical-align: middle;
+}
+
+.input_bt a {
+    display: block;
+    text-align: center;
+}
+
+.input_bt a button {
+    width: 303px;
+    height: 41px;
+    line-height: 41px;
+    font-size: 16px;
+    background-color: #c81623;
+    color: #fff;
+}
+
+.login_register {
+    display: flex;
+    width: 303px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.login_register a {
+    margin-right: 10px;
+    color: #1474af;
+}
+
+footer {
+    height: 120px;
+    background-color: #fff;
+}

@@ -1,0 +1,530 @@
+/* 固定导航栏模块 */
+
+.nav_fix {
+    position: fixed;
+    top: 300px;
+    right: 50%;
+    margin-right: 620px;
+}
+
+.nav_fix ul li {
+    width: 65px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+}
+
+.nav_fix ul li:hover {
+    background-color: #c81623;
+}
+
+.nav_fix ul li:hover a {
+    color: #fff;
+}
+
+
+/* 主体模块 */
+
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background: url(../upload/bg01.jpg) no-repeat;
+}
+
+.but_left,
+.but_right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 40px;
+    font-family: "icomoon";
+    font-size: 18px;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.focus a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .6);
+}
+
+.but_left {
+    left: 0;
+    border-radius: 0 50% 50% 0;
+}
+
+.but_right {
+    right: 0;
+    border-radius: 50% 0 0 50%;
+}
+
+.focus ul {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.focus ul li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.focus ul li:hover {
+    cursor: pointer;
+}
+
+.focus ul li:nth-child(1) {
+    background-color: #c81623;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    width: 250px;
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 32px;
+    line-height: 32px;
+    text-indent: 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news_hd h4 {
+    float: left;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+}
+
+.news_hd a {
+    float: right;
+    margin-right: 20px;
+}
+
+.news_hd a::after {
+    content: "\e920";
+    font-family: "icomoon";
+    margin-left: 5px;
+}
+
+.news_bd ul {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.news_bd ul li {
+    height: 23px;
+    /* 文字单行显示 超出部分文字隐藏 并以省略号显示 */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.news_bd ul li a span {
+    font-weight: 700;
+}
+
+.lifeservice {
+    width: 250px;
+    height: 210px;
+    /* background-color: pink; */
+    border: 1px solid #e4e4e4;
+    border-top: none;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 70px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.lifeservice ul li img {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.lifeservice ul li:nth-child(4n) {
+    width: 59px;
+    border-right: none;
+}
+
+.lifeservice ul li a {
+    display: block;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: block;
+    width: 26px;
+    height: 24px;
+    margin: 10px auto 12px;
+    background: url(../img/sprits.png) no-repeat;
+}
+
+.lifeservice ul li:nth-child(1) i {
+    background-position: -17px -16px;
+}
+
+.lifeservice ul li:nth-child(2) i {
+    background-position: -78px -16px;
+}
+
+.lifeservice ul li:nth-child(3) i {
+    background-position: -140px -16px;
+}
+
+.lifeservice ul li:nth-child(4) i {
+    background-position: -206px -16px;
+}
+
+.lifeservice ul li:nth-child(5) i {
+    background-position: -17px -88px;
+}
+
+.lifeservice ul li:nth-child(6) i {
+    background-position: -78px -88px;
+}
+
+.lifeservice ul li:nth-child(7) i {
+    background-position: -141px -88px;
+}
+
+.lifeservice ul li:nth-child(8) i {
+    background-position: -206px -88px;
+}
+
+.lifeservice ul li:nth-child(9) i {
+    background-position: -17px -159px;
+}
+
+.lifeservice ul li:nth-child(10) i {
+    background-position: -78px -160px;
+}
+
+.lifeservice ul li:nth-child(11) i {
+    background-position: -140px -156px;
+}
+
+.lifeservice ul li:nth-child(12) i {
+    background-position: -206px -160px;
+}
+
+.bargain {
+    height: 75px;
+    margin-top: 5px;
+}
+
+.bargain img {
+    width: 250px;
+    height: 75px;
+}
+
+
+/* recommend推荐模块 */
+
+.recommend {
+    height: 163px;
+    margin-top: 10px;
+}
+
+.recommend_hd {
+    float: left;
+    overflow: hidden;
+    width: 206px;
+    height: 163px;
+    text-align: center;
+    background-color: #5c5251;
+}
+
+.recommend_hd img {
+    display: block;
+    width: 57px;
+    height: 57px;
+    margin: 30px auto 10px;
+}
+
+.recommend_hd span {
+    font-size: 18px;
+    color: #fff;
+}
+
+.recommend_bd {
+    float: left;
+    width: 994px;
+    height: 163px;
+    background-color: #ebebeb;
+}
+
+.recommend_bd ul {
+    width: 996px;
+}
+
+.recommend_bd ul li {
+    float: left;
+    width: 249px;
+    height: 143px;
+    margin-top: 10px;
+    border-right: 1px solid #ddd;
+}
+
+.recommend_bd ul li:last-child {
+    border-right: none;
+}
+
+.recommend_bd .price {
+    float: left;
+    padding: 10px 0 0 20px;
+}
+
+.recommend_bd .price h3 {
+    font-size: 18px;
+}
+
+.recommend_bd .price span {
+    font-size: 14px;
+    background-color: #00a0e8;
+}
+
+.recommend_bd ul li a:hover {
+    color: #333;
+}
+
+.recommend_bd ul li a img {
+    float: right;
+    width: 100px;
+    height: 120px;
+    margin: 10px 20px 0 0;
+}
+
+.recommend_bd ul li:last-child a img {
+    width: 130px;
+}
+
+
+/* guess模块 */
+
+.guess {
+    margin-top: 20px;
+}
+
+.guess_hd {
+    height: 30px;
+    line-height: 30px;
+}
+
+.guess_hd h3 {
+    font-size: 18px;
+}
+
+.change::after {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-right: 10px;
+    background: url(../img/sprits.png) no-repeat -420px -110px;
+}
+
+.guess_bd {
+    border: 1px solid #ededed;
+}
+
+.guess_bd ul li {
+    float: left;
+    width: 199px;
+    height: 231px;
+}
+
+.guess_bd ul li>a {
+    display: block;
+    overflow: hidden;
+    width: 199px;
+    height: 155px;
+    line-height: 155px;
+    text-align: center;
+}
+
+.guess_bd ul li>a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.description {
+    width: 200px;
+    padding-left: 35px;
+    border-right: 1px solid #ededed;
+}
+
+.guess_bd ul li:nth-child(6n) .description {
+    border-right: none;
+}
+
+.description h4 {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.description p i {
+    font-size: 14px;
+    font-weight: 700;
+    color: #df3033;
+}
+
+.description p span {
+    font-size: 18px;
+    font-weight: 700;
+    color: #df3033;
+}
+
+
+/* 楼层区模块 */
+
+.floors {
+    margin-top: 10px;
+    /* margin-bottom: 10px; */
+}
+
+.floor_hd {
+    height: 30px;
+    border-bottom: 2px solid #df3033;
+}
+
+.floor_hd h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c81623;
+}
+
+.tab_list {
+    float: right;
+}
+
+.tab_list ul li {
+    float: left;
+    line-height: 30px;
+}
+
+.tab_list ul li a {
+    padding: 0 15px;
+}
+
+.floor_bd img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.col_210 {
+    float: left;
+    width: 210px;
+    height: 360px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.col_210_hd ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    margin-left: 13px;
+    line-height: 33px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.col_210_bd a {
+    display: block;
+}
+
+.col_210_bd a img {
+    margin-top: 26px;
+    width: 152px;
+    height: 196px;
+}
+
+.col_329 {
+    float: left;
+    width: 329px;
+    height: 360px;
+}
+
+.col_329 img {
+    width: 329px;
+    height: 360px;
+}
+
+.col_220 {
+    overflow: hidden;
+    float: left;
+    width: 220px;
+    height: 360px;
+    border-bottom: 1px solid #ededed;
+}
+
+.col_220 a {
+    display: block;
+}
+
+.col_220 a:nth-child(1) {
+    border-bottom: 1px solid #ededed;
+}
+
+.col_220 img {
+    width: 220px;
+    height: 180px;
+}
+
+.col_220 .last {
+    border-right: 1px solid #ededed;
+}
+
+.col_221 {
+    float: left;
+    width: 221px;
+    height: 360px;
+    border-right: 1px solid #ededed;
+    border-left: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
+}
+
+.brand {
+    height: 65px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #f7f7f7;
+    background-color: pink;
+}
