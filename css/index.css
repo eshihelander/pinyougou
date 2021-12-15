@@ -1,8 +1,35 @@
+/* 二维码广告模块 */
+
+.erweima {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 300px;
+    margin: 80px 0 0 620px;
+}
+
+.erweima img {
+    width: 75px;
+    /* height: 75px; */
+}
+
+.btn_x {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 15px;
+    line-height: 15px;
+    transform: translateX(-100%);
+}
+
+
 /* 固定导航栏模块 */
 
 .nav_fix {
+    display: none;
     position: fixed;
-    top: 300px;
+    top: 80px;
     right: 50%;
     margin-right: 620px;
 }
@@ -13,15 +40,22 @@
     line-height: 32px;
     text-align: center;
     border-bottom: 1px solid #ededed;
+    cursor: pointer;
 }
 
-.nav_fix ul li:hover {
+.fix_current {
+    background-color: #c81623;
+    color: #fff;
+}
+
+
+/* .nav_fix ul li:hover {
     background-color: #c81623;
 }
 
 .nav_fix ul li:hover a {
     color: #fff;
-}
+} */
 
 
 /* 主体模块 */
@@ -34,11 +68,21 @@
 }
 
 .focus {
+    overflow: hidden;
     position: relative;
     float: left;
     width: 721px;
     height: 455px;
-    background: url(../upload/bg01.jpg) no-repeat;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    width: 500%;
+}
+
+.focus ul li {
+    float: left;
 }
 
 .but_left,
@@ -71,27 +115,24 @@
     border-radius: 50% 0 0 50%;
 }
 
-.focus ul {
+.focus ol {
     position: absolute;
-    bottom: 5px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.focus ul li {
+.focus ol li {
     float: left;
-    width: 8px;
-    height: 8px;
-    margin: 0 2px;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
     background-color: #fff;
     border-radius: 50%;
-}
-
-.focus ul li:hover {
     cursor: pointer;
 }
 
-.focus ul li:nth-child(1) {
+.focus ol .current {
     background-color: #c81623;
 }
 

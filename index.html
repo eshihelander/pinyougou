@@ -18,45 +18,45 @@
     <link rel="stylesheet" href="./css/common.css">
     <!-- 引入主页css样式 -->
     <link rel="stylesheet" href="./css/index.css">
+    <!-- 引入轮播图动画js index要依赖于动画 所以动画js要写在index之上-->
+    <script src="./js/animate.js"></script>
+    <!-- 引入jQuery -->
+    <script src="./js/jquery.js"></script>
+    <!-- 引入主页js -->
+    <script src="./js/index.js"></script>
+
 </head>
 
 <body>
+    <!-- 手动关闭二维码广告 -->
+    <div class="erweima">
+        <button class="btn_x" title="点此关闭">X</button>
+        <img src="./img/author.jpg" title="作者微信">
+    </div>
     <!-- 固定导航栏模块 -->
     <div class="nav_fix">
         <ul>
-            <li>
-                <a href="#home_elc">家用电器</a>
+            <li class="fix_current">家用电器</li>
+            <li>手机通讯</li>
+            <li>电脑办公</li>
+            <li>生活用品</li>
+            <li>汽车用品</li>
+            <!-- <li>
+                <a href="javascript:;">运动户外</a>
+            </li> -->
+
+            <!-- <li>
+                <a href="javascript:;">食品酒类</a>
             </li>
             <li>
-                <a href="#phone">手机通讯</a>
+                <a href="javascript:;">医药保健</a>
             </li>
             <li>
-                <a href="#pc">电脑办公</a>
+                <a href="javascript:;">图书音像</a>
             </li>
             <li>
-                <a href="#">家居家具</a>
-            </li>
-            <li>
-                <a href="#">生活用品</a>
-            </li>
-            <li>
-                <a href="#">运动户外</a>
-            </li>
-            <li>
-                <a href="#">汽车用品</a>
-            </li>
-            <li>
-                <a href="#">食品酒类</a>
-            </li>
-            <li>
-                <a href="#">医药保健</a>
-            </li>
-            <li>
-                <a href="#">图书音像</a>
-            </li>
-            <li>
-                <a href="#">金融彩票</a>
-            </li>
+                <a href="javascript:;">金融彩票</a>
+            </li> -->
         </ul>
     </div>
     <!-- 顶部快捷栏 shortcut模块 Start -->
@@ -72,17 +72,45 @@
                 <ul>
                     <li><a href="order.html">我的订单</a></li>
                     <li></li>
-                    <li class="arrow-icon"><a href="#">我的品优购</a></li>
+                    <li class="arrow-icon">
+                        <a href="#">我的品优购</a>
+                        <ul class="sec_menu">
+                            <li><a href="#">第一行</a></li>
+                            <li><a href="#">第二行</a></li>
+                            <li><a href="#">第三行</a></li>
+                        </ul>
+                    </li>
                     <li></li>
                     <li><a href="#">品优购会员</a></li>
                     <li></li>
                     <li><a href="#">企业采购</a></li>
                     <li></li>
-                    <li class="arrow-icon"><a href="#">关注品优购</a></li>
+                    <li class="arrow-icon">
+                        <a href="#">关注品优购</a>
+                        <ul class="sec_menu">
+                            <li><a href="#">第一行</a></li>
+                            <li><a href="#">第二行</a></li>
+                            <li><a href="#">第三行</a></li>
+                        </ul>
+                    </li>
                     <li></li>
-                    <li class="arrow-icon"><a href="#">客户服务</a></li>
+                    <li class="arrow-icon">
+                        <a href="#">客户服务</a>
+                        <ul class="sec_menu">
+                            <li><a href="#">第一行</a></li>
+                            <li><a href="#">第二行</a></li>
+                            <li><a href="#">第三行</a></li>
+                        </ul>
+                    </li>
                     <li></li>
-                    <li class="arrow-icon"><a href="#">网站导航</a></li>
+                    <li class="arrow-icon">
+                        <a href="#">网站导航</a>
+                        <ul class="sec_menu">
+                            <li><a href="#">第一行</a></li>
+                            <li><a href="#">第二行</a></li>
+                            <li><a href="#">第三行</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -97,7 +125,7 @@
             </h1>
         </div>
         <div class="search">
-            <input type="text" placeholder="语言开发">
+            <input type="text" value="手机----尝试按下s键">
             <button>搜索</button>
         </div>
         <div class="hotwords">
@@ -160,16 +188,32 @@
     <div class="w">
         <div class="main">
             <div class="focus">
-                <a href="#" class="but_left"></a>
-                <a href="#" class="but_right"></a>
+                <!-- 核心滚动区域 -->
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>
+                        <a href="javascript:;"><img src="./upload/focus.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./upload/focus1.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./upload/focus2.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><img src="./upload/focus3.jpg" alt=""></a>
+                    </li>
+                    <!-- 最后一个为克隆图片 是为了实现无缝滚动切换 但是这样做有bug 思考一下 -->
+                    <!-- <li>
+                        <a href="javascript:;"><img src="./upload/focus.jpg" alt=""></a>
+                    </li> -->
                 </ul>
+                <!-- 左侧按钮 -->
+                <a href="javascript:;" class="but_left"></a>
+                <!-- 右侧按钮 -->
+                <a href="javascript:;" class="but_right"></a>
+                <!-- 小圆点 -->
+                <ol class="circle">
+                </ol>
             </div>
             <div class="newsflash">
                 <div class="news">
@@ -642,7 +686,142 @@
                 </div>
             </div>
         </div>
-
+        <div class="lifegoods" id="life">
+            <div class="floor_hd">
+                <h3>生活用品</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">品质优选</a>|</li>
+                        <li><a href="#">新机尝鲜</a>|</li>
+                        <li><a href="#">高性价比</a>|</li>
+                        <li><a href="#">口碑推荐</a>|</li>
+                        <li><a href="#">合约机</a>|</li>
+                        <li><a href="#">手机卡</a>|</li>
+                        <li><a href="#">店铺精选</a>|</li>
+                        <li><a href="#">手机配件</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor_bd">
+                <div class="tab_content clearfix">
+                    <div class="col_210">
+                        <div class="col_210_hd">
+                            <ul>
+                                <li><a href="#">手机通讯</a></li>
+                                <li><a href="#">以旧换新</a></li>
+                                <li><a href="#">双卡双待</a></li>
+                                <li><a href="#">自营配件</a></li>
+                                <li><a href="#">金属机身</a></li>
+                                <li><a href="#">高清屏</a></li>
+                            </ul>
+                        </div>
+                        <div class="col_210_bd">
+                            <a href="#">
+                                <img src="./upload/shouji01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_329">
+                        <a href="#">
+                            <img src="./upload/shouji02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_220">
+                        <a href="#">
+                            <img src="./upload/shouji03.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./upload/shouji04.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_221">
+                        <a href="#">
+                            <img src="./upload/shouji05.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_220">
+                        <a href="#">
+                            <img src="./upload/shouji06.png" alt="">
+                        </a>
+                        <a href="#" class="last">
+                            <img src="./upload/shouji07.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <img src="./upload/brand_shouji.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="cargoods" id="car">
+            <div class="floor_hd">
+                <h3>汽车用品</h3>
+                <div class="tab_list">
+                    <ul>
+                        <li><a href="#" class="style_red">热门</a>|</li>
+                        <li><a href="#">电脑/平板</a>|</li>
+                        <li><a href="#">潮流影音</a>|</li>
+                        <li><a href="#">智能/外设</a>|</li>
+                        <li><a href="#">DIY硬件</a>|</li>
+                        <li><a href="#">电竞游戏</a>|</li>
+                        <li><a href="#">办公/网络</a>|</li>
+                        <li><a href="#">文具电教</a>|</li>
+                        <li><a href="#">精选配件</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="floor_bd">
+                <div class="tab_content clearfix">
+                    <div class="col_210">
+                        <div class="col_210_hd">
+                            <ul>
+                                <li><a href="#">SSD硬盘</a></li>
+                                <li><a href="#">显示器</a></li>
+                                <li><a href="#">机械硬盘</a></li>
+                                <li><a href="#">台式机</a></li>
+                                <li><a href="#">组装电脑</a></li>
+                                <li><a href="#">配件专区</a></li>
+                            </ul>
+                        </div>
+                        <div class="col_210_bd">
+                            <a href="#">
+                                <img src="./upload/pc01.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col_329">
+                        <a href="#">
+                            <img src="./upload/pc02.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_220">
+                        <a href="#">
+                            <img src="./upload/pc03.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./upload/pc04.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_221">
+                        <a href="#">
+                            <img src="./upload/pc05.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col_220">
+                        <a href="#">
+                            <img src="./upload/pc06.png" alt="">
+                        </a>
+                        <a href="#" class="last">
+                            <img src="./upload/pc07.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="brand">
+                    <img src="./upload/brand_pc.png" alt="">
+                </div>
+            </div>
+        </div>
     </div>
     <!-- floor电梯楼层模块结束 -->
     <!-- footer页脚模块开始 -->
