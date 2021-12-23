@@ -1,7 +1,7 @@
-$(function() {
+$(function () {
     // 一、全选模块
     // 1、点击全选框 复选框跟随变化
-    $('.checkall').change(function() {
+    $('.checkall').change(function () {
         // 获取全选框的选中状态
         // $(this).prop("checked");
         // 采用并集选择器的方式 同时选中复选框和全选框 中间用逗号隔开
@@ -15,7 +15,7 @@ $(function() {
     });
 
     // 2、如果复选框全部被勾选 全选框就一并被选中
-    $(".j-checkbox").change(function() {
+    $(".j-checkbox").change(function () {
         // 获取复选框的选中状态
         // $(".j-checkbox:checked");
         // 获取复选框被选中的数量
@@ -40,7 +40,7 @@ $(function() {
     // 1、通过点击+-改变文本框内的数量
     // 2、数量变更后 自动计算小计中的商品价格
 
-    $('.increment').click(function() {
+    $('.increment').click(function () {
         // 先让num获取到当前文本框里的数值
         var num = $(this).siblings('.itxt').val();
         // 点击一次+号 在已获取到的数值基础上 文本框内的值再增加1
@@ -59,7 +59,7 @@ $(function() {
         getSum();
 
     })
-    $('.decrement').click(function() {
+    $('.decrement').click(function () {
         // 先让num获取到当前文本框里的数值
         var num = $(this).siblings('.itxt').val();
         // 不可以出现负值
@@ -82,7 +82,7 @@ $(function() {
     })
 
     // 如果直接修改数值 价格也要随着变化
-    $(".itxt").change(function() {
+    $(".itxt").change(function () {
         // 获取单价
         var p = $(this).parents('.p-num').siblings('.p-price').text();
         p = p.substr(1);
@@ -103,13 +103,13 @@ $(function() {
         var count = 0;
         var money = 0;
         // 用each 遍历每个商品元素 获取单个商品数量
-        $(".itxt").each(function(index, ele) {
+        $(".itxt").each(function (index, ele) {
             count += parseInt($(ele).val());
 
         });
         // 把count赋值给商品数量总计元素 这个要放在each循环外面 否则会出现bug还没有报错提示
         $(".amount-sum em").text(count);
-        $(".p-sum").each(function(index, ele) {
+        $(".p-sum").each(function (index, ele) {
             money += parseFloat($(ele).text().substr(1));
 
         });
@@ -119,13 +119,13 @@ $(function() {
 
     // 四、 刪除商品模块
     // 1、点击删除按钮  删除当前商品
-    $(".p-action a").click(function() {
+    $(".p-action a").click(function () {
         $(this).parents(".cart-item").remove();
         // 删除商品后要重新计算 商品总数和总价
         getSum();
     });
     // 2、 删除选中的商品
-    $(".remove-batch").click(function() {
+    $(".remove-batch").click(function () {
         // :checked可以检测到哪个复选框是选中状态
         // console.log($(".j-checkbox:checked"));
         $(".j-checkbox:checked").parents(".cart-item").remove();
@@ -133,7 +133,7 @@ $(function() {
         getSum();
     });
     // 3、 清理购物车
-    $(".clear-all").click(function() {
+    $(".clear-all").click(function () {
         $(".cart-item").remove();
         // $(".cart-item-list").empty();
         // 删除商品后要重新计算 商品总数和总价
