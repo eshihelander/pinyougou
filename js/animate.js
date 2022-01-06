@@ -8,8 +8,7 @@ function animate(obj, target, callback) { // obj 接收 div| target 接收 800 |
             // 这里步长涉及到小数 会影响移动距离的准确性 解决方法就是 把步长改为整数
             // 这里步长会有正负值的问题 会影响到返回时移动距离的准确性 
             // 解决方法就是 加个判断条件 如果step 为正 向上取整 如果为负 向下取整
-            var step = (target - obj.offsetLeft) / 10; -
-            0.9
+            var step = (target - obj.offsetLeft) / 10;
             step = step > 0 ? Math.ceil(step) : Math.floor(step);
             console.log(step, obj.offsetLeft, target); // -1 -712 -722
             if (obj.offsetLeft == target || Math.abs(obj.offsetLeft - target) < 15) {
@@ -22,7 +21,7 @@ function animate(obj, target, callback) { // obj 接收 div| target 接收 800 |
                 // 上述代码也可以简写如下
                 callback && callback();
             } else {
-                // 把这里的 1 改为一个慢慢变小的值 步长值公式 （目标值-现在的位置）
+                // 把这里的 step 由固定值 改为一个慢慢变小的值 步长值公式 （目标值-现在的位置）
                 obj.style.left = obj.offsetLeft + step + 'px';
                 // console.log(obj.offsetLeft + step);
                 // console.log(obj.offsetLeft);
