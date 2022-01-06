@@ -1,20 +1,20 @@
-window.addEventListener('load', function() {
+window.addEventListener('load', function () {
     var preview_img = document.querySelector('.preview_img');
     var mask = document.querySelector('.mask');
     var big = document.querySelector('.big');
 
     // 鼠标经过 显示mask 和 大图
-    preview_img.addEventListener('mouseover', function() {
+    preview_img.addEventListener('mouseover', function () {
         mask.style.display = 'block';
         big.style.display = 'block';
     });
     //鼠标离开 隐藏mask 和 大图
-    preview_img.addEventListener('mouseout', function() {
+    preview_img.addEventListener('mouseout', function () {
         mask.style.display = 'none';
         big.style.display = 'none';
     });
     // 给mask添加跟随鼠标移动的事件
-    mask.addEventListener('mousemove', function(e) {
+    mask.addEventListener('mousemove', function (e) {
         // 先获取鼠标在盒子内的坐标
         var x = e.pageX - preview_img.offsetLeft;
         var y = e.pageY - preview_img.offsetTop;
